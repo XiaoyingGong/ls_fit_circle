@@ -33,8 +33,8 @@ def ls_fits_circle(pts, solar_center=None, solar_r=None):
         x_c = u_c + x_mean
         y_c = v_c + y_mean
     else:# 圆心已知
-        x_c = solar_center[:, 1]
-        y_c = solar_center[:, 0]
+        x_c = solar_center[1]
+        y_c = solar_center[0]
         u_c = x_c - x_mean
         v_c = y_c - y_mean
 
